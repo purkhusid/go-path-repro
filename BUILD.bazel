@@ -1,0 +1,14 @@
+# Gazelle
+load("@bazel_gazelle//:def.bzl", "gazelle")
+load("@io_bazel_rules_go//go:def.bzl", "go_path")
+
+# gazelle:prefix github.com/purkhusid/go-path-repro
+gazelle(name = "gazelle")
+
+go_path(
+    name = "gopath",
+    deps = [
+        "//testing:go_default_library",
+        "//testing:go_default_test",
+    ],
+)

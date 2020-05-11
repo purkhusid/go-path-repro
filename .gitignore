@@ -1,0 +1,8 @@
+bazel-bazel-poc
+bazel-bin
+bazel-genfiles
+bazel-out
+bazel-testlogs
+.ijwb
+node_modules
+*.bs.js
